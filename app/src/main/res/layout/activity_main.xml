@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scrollbars="none"
+        android:layout_centerInParent="true"
+        android:id="@+id/rec"/>
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="숫자 입력"
+        android:layout_below="@+id/rec"
+
+        android:overScrollMode="never"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"/>
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="개수 입력"
+        android:layout_above="@+id/rec"
+        android:layout_marginBottom="30dp"
+        android:overScrollMode="never"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="30dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/btn2"
+        android:onClick="click2"
+        android:layout_toRightOf="@id/edit2"
+        android:layout_alignBottom="@id/edit2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/btn"
+        android:onClick="click"
+        android:layout_toRightOf="@id/edit"
+        android:layout_alignBottom="@id/edit"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"/>
+</RelativeLayout>
